@@ -6,7 +6,7 @@ pt-BR:
     statistics:
       title: 'Estatísticas'
       indicators: 'Indicadores'
-      CUpom                                               : 'Planejamento de atendimento'
+      CUpom: 'Planejamento de atendimento'
       kpis: 'KPIs - VIVO'
       total_by_clients: 'Total de Abertas por cliente'
       total_by_customers: 'Total de Abertas por prestador'
