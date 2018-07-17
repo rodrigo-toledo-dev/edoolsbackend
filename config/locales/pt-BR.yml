@@ -10,23 +10,12 @@ pt-BR:
   activerecord:
     models:
       user: 'Usuários'
-      product: 'Materiais'
-      product_log: 'Logs'
     attributes:
-      import:
-        voucher_file: 'Arquivo de Vouchers'
       user:
         name: 'Nome'
         email: 'Email'
         password: 'Senha'
         password_confirmation: 'Confirmação da senha'
-      product:
-        name: 'Nome do material'
-      product_log:
-        product_id: 'Material'
-        value: 'Quantidade'
-        user_id: 'Responsável'
-        created_at: 'Data e hora da ocorrência'
     errors:
       messages:
         record_invalid: 'A validação falhou: %{errors}'
