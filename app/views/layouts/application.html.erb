@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Edoolsbackend</title>
+    <title><%=t(:system_name)%></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%=controller_name%>">
+
+    <div class="container">
+
+      
+      <%= render 'layouts/navigation' %>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="col-md-12">
+          <% flash.each do |key, message| %>
+            <div class="text-center alert alert-<%=key == 'notice' ? 'success' : 'danger' %>">
+              <%= message %>
+            </div>
+          <% end %>
+          <%= yield %>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+
   </body>
 </html>

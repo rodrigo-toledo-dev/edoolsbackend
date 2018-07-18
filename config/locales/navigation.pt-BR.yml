@@ -2,19 +2,6 @@
 pt-BR:
   navigation:
     root: 'Dashboard'
-    map: 'Mapa'
-    statistics:
-      title: 'Estatísticas'
-      indicators: 'Indicadores'
-      CUpom: 'Planejamento de atendimento'
-      kpis: 'KPIs - VIVO'
-      total_by_clients: 'Total de Abertas por cliente'
-      total_by_customers: 'Total de Abertas por prestador'
-    stock:
-      title: 'Estoque'
-      planning: 'Movimentação'
-      status: 'statu'
-      jser: 'user'
     users:
       title: 'Usuários'
       list: 'Lista de Usuários'
