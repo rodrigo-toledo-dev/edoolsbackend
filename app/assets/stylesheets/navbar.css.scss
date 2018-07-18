@@ -1,0 +1,48 @@
+.navbar {
+	margin-bottom: 20px;
+}
+
+.navbar-default {
+	background-color: #e7420c;
+}
+
+.navbar-default .navbar-brand {
+	color: rgb(255, 255, 255);
+}
+
+/* line 403, /Users/rodrigotoledo/.rvm/gems/ruby-2.4.1@pxos_w4m/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #5e5e5e;
+	background-color: transparent;
+}
+
+/* line 410, /Users/rodrigotoledo/.rvm/gems/ruby-2.4.1@pxos_w4m/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
+
+.navbar-default .navbar-text {
+	color: rgb(255, 255, 255);
+}
+
+/* line 415, /Users/rodrigotoledo/.rvm/gems/ruby-2.4.1@pxos_w4m/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
+
+.navbar-default .navbar-nav>li>a {
+	color: rgb(255, 255, 255);
+}
+
+/* line 418, /Users/rodrigotoledo/.rvm/gems/ruby-2.4.1@pxos_w4m/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	color: rgb(223, 223, 223);
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	color: rgb(255, 255, 255);
+	background-color: #c04646;
+}

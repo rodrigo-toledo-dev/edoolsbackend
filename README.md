@@ -1,24 +1,7 @@
-# README
+# Seguir o documento
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://docs.google.com/document/d/14nGyNQcZx_x8Nz9ADYBiU2el8W7V-zxQzYL1OYBW-Ag/edit
 
-Things you may want to cover:
+# Endereço heroku
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://edoolsbackend.herokuapp.com/
