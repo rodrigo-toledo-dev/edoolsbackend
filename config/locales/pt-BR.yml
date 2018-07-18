@@ -1,6 +1,6 @@
 ---
 pt-BR:
-  system_name: 'EDOOLS'
+  system_name: 'EADBOX - Administração de Cursos'
   errors_on_save: 'Erro(s) ao salvar dos dados'
   edit_label: 'Editar'
   fill_voucher_label: 'Validar Voucher'

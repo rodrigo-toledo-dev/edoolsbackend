@@ -1,9 +1,13 @@
 # encoding: UTF-8
 # pt-BR translations for Devise
 pt-BR:
+  fill_with_email: 'Preencha com seu Email'
+  fill_with_password: 'Preencha com sua Senha'
   access: 'Acessar'
   forgot_your_password: "Esqueceu sua senha?"
+  forgot_your_password_title: "Esqueceu sua senha? Preencha com seu email abaixo."
   enter_with_credentials: "Entre com suas credencias"
+  send_instructions: 'Receber instruções para acesso'
   devise:
     confirmations:
       confirmed: "Sua conta foi confirmada com sucesso. Você está logado."
