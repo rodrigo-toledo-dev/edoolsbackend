@@ -1,14 +1,14 @@
 require "rails_helper"
 
-RSpec.feature "Login in application" do
+RSpec.feature "Sign in in application" do
 	before do
-		@rodrigo = create(:user)
+		create(:user)
 	end
-	scenario "Login with right credentials" do
+	scenario "Sign in with right credentials" do
 		visit "/"
 		expect(page).to have_content("Para continuar, efetue login ou registre-se.") 
 
-		fill_in "user_email", with: "rodrigo.toledo@edools.com.br"
+		fill_in "user_email", with: "rodrigo.toledo@eadbox.com"
 		fill_in "user_password", with: "asdqwe123"
 		click_button "Acessar"
 
@@ -18,7 +18,7 @@ RSpec.feature "Login in application" do
 		expect(page).not_to have_button("Acessar") 
 	end
 
-	scenario "Login with wrong credentials" do
+	scenario "Sign in with wrong credentials" do
 		visit "/"
 		fill_in "user_email", with: "anything@invalid.com"
 		fill_in "user_password", with: "123123"
