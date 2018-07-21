@@ -2,6 +2,14 @@
 pt-BR:
   navigation:
     root: 'Dashboard'
+    schools:
+      title: 'Escolas'
+      list: 'Lista de Escolas'
+      new: 'Adicionar Escola'
+    courses:
+      title: 'Cursos'
+      list: 'Lista de Cursos'
+      new: 'Adicionar Curso'
     users:
       title: 'Usuários'
       list: 'Lista de Usuários'

@@ -13,6 +13,8 @@
 		<div id="navbaStatistics" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li class="<%=current_class?(root_path)%>"><%= link_to t('navigation.root'), root_path %></li>
+				<li class="<%=current_class?(schools_path)%>"><%= link_to t('navigation.schools.title'), schools_path %></li>
+				<li class="<%=current_class?(courses_path)%>"><%= link_to t('navigation.courses.title'), courses_path %></li>
 				<li><%= link_to t('navigation.logout'), destroy_user_session_path, method: :delete %></li>
 			</ul>
 		</div><!--/.nav-collapse -->

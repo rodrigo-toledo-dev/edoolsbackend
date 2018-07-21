@@ -1,0 +1,45 @@
+<%= form_with(model: school, local: true) do |form| %>
+  <% if school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(school.errors.count, "error") %> prohibited this school from being saved:</h2>
+
+      <ul>
+      <% school.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :owner_email %>
+<%= form.email_field :owner_email, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :pitch %>
+    <%= form.text_area :pitch, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :subdomain %>
+    <%= form.text_field :subdomain, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :creation_at %>
+    <%= form.date_select :creation_at, html: {class: 'form-control'} %>
+  </div>
+
+  <div class="actions mt-3">
+    <div class="btn-group" role="group" aria-label="Ações">
+      <%= form.submit 'Salvar', class: 'btn btn-sm btn-primary' %>
+      <%= link_to 'Voltar para Lista', schools_path, class: 'btn btn-sm btn-info' %>
+    </div>
+  </div>
+<% end %>

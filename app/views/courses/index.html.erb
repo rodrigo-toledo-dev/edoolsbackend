@@ -1,0 +1,40 @@
+<h3 class="mb-3">Cursos</h3>
+
+<table class="table mt-3 mb-3 datatable">
+  <thead>
+    <tr>
+      <th>Escola</th>
+      <th>Nome</th>
+      <th>Título</th>
+      <th>Descrição</th>
+      <th>Duração</th>
+      <th>Valor</th>
+      <th>Alunos</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @courses.each do |course| %>
+      <tr>
+        <td><%= course.school %></td>
+        <td><%= course.name %></td>
+        <td><%= course.title %></td>
+        <td><%= course.description %></td>
+        <td><%= course.duration %></td>
+        <td><%= number_to_currency course.value %></td>
+        <td><%= course.students %></td>
+        <td>
+          <div class="btn btn-group">
+            <%= link_to 'Editar', edit_course_path(course), class: 'btn btn-primary btn-sm' %>
+            <%= link_to 'Apagar', course, method: :delete, data: { confirm: 'Deseja continuar coma operação?' }, class: 'btn btn-danger btn-sm' %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Criar Curso', new_course_path, class: 'btn btn-success' %>
